@@ -1,0 +1,20 @@
+spring:
+  application:
+    name: activity-server
+  cloud:
+    nacos:
+      server-addr: 192.168.137.47
+      config:
+        file-extension: yaml
+  data:
+    redis:
+      host: 192.168.137.47
+  threads:
+    virtual:
+      enabled: true
+server:
+  port: 8083
+
+logging:
+  level:
+    com.lp.feign: debug
